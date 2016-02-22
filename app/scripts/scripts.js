@@ -20,6 +20,22 @@ var Site = new function () {
         
          //$.mask.definitions['~']='[+-]';    
          $('input[type=tel]').mask("+7(999) 999-9999");
+        
+        
+        $('.single-item').slick(
+        {
+            dots: true,
+            infinite: true,
+            speed: 300,
+        });
+        
+        $('.review .slider').slick(
+        {
+            infinite: true,
+            speed: 300,
+        });
+        
+        
                
      $(".call-back-form").each(function(){
 		var it = $(this);
