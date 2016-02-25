@@ -1225,3 +1225,4 @@ p b{
     display: block;
     z-index: 10;
 }
+.single-item .slick-list img{ width: 100%;}

@@ -4,10 +4,42 @@ $(function(){
     Browser.Init();
     Site.Init();     
 
+    $(".navbar-toggle").bind("click", function(e){
+        e.preventDefault();
+        var obj = $(this).closest(".container").find("#navbar");
+        var visible = [0, "295px"];
+        if (!obj.hasClass("in"))
+            {
+                obj.addClass("collapse in").animate({height:visible[1]},500);
+            } else obj.animate({height:visible[0]},500, function(){ $(this).removeClass("in")});
+
+        return false;
+    }); 
 });
+
+//jQuery.fn.toggle(function(){
+//    var t = $(this);
+//    
+//    t.bind("click", function(e){
+//        e.preventDefault();
+//        var obj = $(this).closest(".container").find("#navbar");
+//        var visible = [0, "260px"];
+//        if (!obj.hasClass("in"))
+//            {
+//                obj.addClass("collapse in").animate({height:visible[1]},500);
+//            } else obj.animate({height:visible[0]},500, function(){ $(this).removeClass("in")});
+//
+//        return false;
+//    });    
+//})
 
 var Site = new function () {
     this.Init = function(){
+        
+        $("a[data-rel='m_PageScroll2id']").mPageScroll2id({
+            scrollSpeed: 500,
+            offset: 100
+        });
         
         //smooth scroll to top
         $(".cd-top").on('click', function(event){
