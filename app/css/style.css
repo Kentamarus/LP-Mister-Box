@@ -1047,7 +1047,8 @@ p b{
     background: url("../uploades/back-china.png") no-repeat center top;
     height: 213px;       
 }
-.withPhotos p{ padding-right: 170px;}
+.withPhotos p{ padding-right:230px;}
+.withPhotos div p{ padding: 0; }
 
 .icon-large{
     position: relative;
@@ -1056,7 +1057,7 @@ p b{
 .icon-large:before{
     content: "";
     position: absolute;
-    left: -83px;
+    left: -73px;
     top: 7px;
     width: 68px;
     height: 23px;
@@ -1078,19 +1079,6 @@ p b{
     background-position: center;
     background-repeat: no-repeat;
     height: 363px;
-}
-.back-romantic{
-    background-image:url('../images/back-romantic.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 381px;
-}
-
-.back-castle{
-    background-image:url('../images/back-castle.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 381px;
 }
 
 .imageForRightSide{ z-index: 0;}
