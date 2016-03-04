@@ -1,3 +1,7 @@
+@import "normalize.css";
+@import "bootstrap.css";
+@import "animate.css";
+@import "slick.css";
 @import "fonts.css";
 
 html,
@@ -155,12 +159,18 @@ body > .container-fluid.main{
     float: right;
     text-align: center;
     width: 206px;
-    margin-top: 45px;
+    margin-top: 4px;
 }
 .will-call .mail{
     font-size: 18px;
     color: white;
     font-family: NotoSans-Bold;
+}
+.will-call .phone{
+    font-family: NotoSans-Bold;
+    font-size: 26px;
+    color: #ff6201;
+    font-style: normal;
 }
 .will-call .send-email{
     border: 1px solid #e67600;
@@ -213,16 +223,19 @@ body > .container-fluid.main{
     display: block;
     margin: 0;
 }
+section.header .title{
+    position: absolute;
+    margin-top: -45px;
+    }
+section.header .base-absolute{ min-height: 60px;}
 
 section.header .title .full{ 
     display: block;
-    background: url("../images/cloud.jpg") no-repeat right bottom;        
+    background: url("../images/cloud.jpg") no-repeat right 15px;
     padding: 0 5%;
     padding-bottom: 60px;
     padding-top: 11px;
 }
-
-section.header .title{ margin: 0;}
 
 .section .title,
 section .title{ margin-top: 23px; }
@@ -232,7 +245,8 @@ section.header .title{
     padding-top: 29px;
     min-height: 80px;
     display: block;
-    background: url("../images/clouds.jpg") no-repeat left top;
+    width: 100%;
+    background: url("../images/clouds.jpg") no-repeat left 20px;
 }
 
 
@@ -298,9 +312,11 @@ section.header .title{
     font-size: 30px;    
     font-family: NotoSans-Bold;
     color: white;
+    padding-right: 10px;
+    text-align: center;
 }
 
-.outSide10{ margin-top: -10px;}
+.outSide10{ margin-top: 18px;}
 
 .white-back{ background: white;}
 
@@ -322,15 +338,17 @@ section.header .title{
 .about .base p{
     font-size: 14px;
     color: #030303;
-    line-height:20px 
-    font-family: NotoSans-Bold;
+    line-height:17px;
+    font-family: NotoSans-Regular;
     text-align: center;
     margin-top: 30px;
+    min-height: 80px;
+    font-weight: bold;
 }
 /*about==========*/
 
 .review{
-    background: #c7da00;
+    background: #a3b900;
     padding-bottom: 60px;
 }
 .review .title{
@@ -391,10 +409,12 @@ section.header .title{
     text-align: center;
     border-bottom: 1px solid #cfd97d;
     margin-bottom: 23px;
+    padding: 0 65px 10px 65px; 
 }
 .block-review .description p{
     font-size: 15px;
     color: black;
+    line-height: 27px;
     font-family: NotoSans-Regular;
 }
 .block-review .author{
@@ -569,23 +589,23 @@ box-shadow: 10px 0px 10px 0px rgba(231,159,32,1);
 }
 
 .delivery{
-    background-color: #9eeeff;
+    background-color: #7ed5ff;
 }
-.delivery .title{ color: #212121;}
+.delivery .title{ color: #212121; font-size: 35px;}
 
 /*attention*/
 .attention{
     color: #030303;
     text-align: center;
-    min-height: 340px;
     background: url("../images/person.png") no-repeat right top;
+    padding-bottom: 30px;
 }
-.attention .title{
-    font-size: 24px;
-    margin-bottom: 20px;
+.size24{
+    font-size: 24px!important;
 }
 .attention .base{
     max-width: 540px;
+    margin-top: 40px;
 }
 /*attention==========*/
 
@@ -601,7 +621,7 @@ box-shadow: 10px 0px 10px 0px rgba(231,159,32,1);
 
 .list-price .line{
     height: 40px;
-    background: #dfe927;
+    background: #becd21;
     display: block;    
 }
 
@@ -615,11 +635,15 @@ box-shadow: 10px 0px 10px 0px rgba(231,159,32,1);
 .grid tr th{ padding-right: 20px;}
 
 .grid thead tr{
-    background-color: #f6fcdc;
+    background-color: #e4f3bb;
     height: 110px;
     font-size: 20px;
     vertical-align: middle;
+    background-image: url("../images/background-line-x.png");
+    background-position: left bottom;
+    background-repeat:  repeat-x;
 }
+
 .grid thead tr td,
 .grid thead tr th{
     font-size: 20px;
@@ -633,7 +657,7 @@ box-shadow: 10px 0px 10px 0px rgba(231,159,32,1);
     width: 100px;
 }
 .grid tbody tr{
-    background:#fcfcfc; 
+    background:#f6f5f5; 
 }
 .grid tbody tr td,
 .grid tbody tr th{
@@ -644,7 +668,7 @@ box-shadow: 10px 0px 10px 0px rgba(231,159,32,1);
 }
 .grid tbody tr th{ text-align: center; }
 .grid tbody tr:nth-child(even){
-    background:#f6fcdc; 
+    background:#e4f3bb; 
 }
 /*grid=======*/
 
@@ -656,13 +680,14 @@ box-shadow: 10px 0px 10px 0px rgba(231,159,32,1);
     border-left:5px solid white;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border-top: 2px solid white;
 }
 
-.signature.item1{
-    background:#dfe927 url(../images/paint1.png) no-repeat center top;    
-}
 .signature.item2{
-    background:#dfe927 url(../images/paint2.png) no-repeat center top;
+    background:#bfcd21 url(../images/paint1.png) no-repeat center top;    
+}
+.signature.item1{
+    background:#bfcd21 url(../images/paint2.png) no-repeat center top;
 }
 
 
@@ -896,12 +921,16 @@ box-shadow: 10px 0px 10px 0px rgba(231,159,32,1);
 
 
 .from-country{
-    background: #8ed9e0 url("../images/back-others.jpg") no-repeat center top;
+    background: #7ed5ff url("../images/back-others.jpg") no-repeat center 51px;
+}
+.from-country.others{
+    background: #8ed9e0;
+    padding-top: 29px;
 }
 
 .size26{ font-size: 26px!important;}
 
-.from-country .min-height{ min-height: 380px;}
+.from-country .min-height{ min-height: 397px;}
 
 .outSide40{ margin-top: 40px;}
 
@@ -1102,6 +1131,8 @@ p b{
 .stocks{ padding:40px 0 150px 0;}
 .stocks .item{ min-height: 300px;}
 
+.block-separ .spaceForDescription p{ padding-left: 20px; }
+
 .stocks .list-it .base .spaceForDescription,
 .stocks .list-it .base .icon,
 .stocks .list-it .base .right{    
@@ -1163,12 +1194,16 @@ p b{
     font-size: 18px;
 }
 
-.stocks .cell{
+.cell{
     float: right;
     height: 300px;
     line-height: 300px;
     padding: 0 20px;
     background: url("../images/background-line-y.png") repeat-y;
+}
+
+.cell-separate{
+    background: url("../images/background-line-y.png") repeat-y right top;
 }
 
 .icons-boxes{ position: relative;}
@@ -1226,3 +1261,5 @@ p b{
     z-index: 10;
 }
 .single-item .slick-list img{ width: 100%;}
+
+.content-img{ width: 100%;}

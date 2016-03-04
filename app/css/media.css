@@ -1,3 +1,37 @@
+@media (max-width:1024px){
+    .stocks .list-it {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .icons-boxes:before{ right: -5px;}
+    .icons-boxes:after{ left: -5px;}
+    .article .title img{ max-width: 150px;}
+    .icon-large:before{ top: 0;}
+    .article .content p{ padding-top: 15px;}
+    .image-pictogram-key:after { left: 45%; }
+    .back-tea {
+        margin-right: -15px;
+    }
+    .article .title img.british {
+        max-width: 90px;
+    }
+    .list-it .base .spaceForDescription {    
+        padding: 0 20px 0 40px;
+        display: table;
+    }
+/*
+    .list-price:last-child,
+    .list-price{ margin: 0 auto;  margin-bottom: 15px; float: none;}    
+*/
+    
+    .about .item-col{ float: left; width: 33%!important;}
+    
+    .delivery .item-col{
+        width: 100%;
+        float: none;
+    }
+}
+
 @media (max-width:1024px) and (min-width:763px){
 .navbar-nav > li{
     float:none;
@@ -36,4 +70,20 @@
         transition: none;
     }
     
+}
+@media (max-width:768px){
+    .header .item-middle{ display: none;}
+    section.header .title {
+        position: relative;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width:640px){
+}
+
+@media (max-width:500px){
+}
+
+@media (max-width:400px){
 }
