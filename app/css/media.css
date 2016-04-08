@@ -17,7 +17,7 @@
     }
     .list-it .base .spaceForDescription {    
         padding: 0 20px 0 40px;
-        display: table;
+        display: table;        
     }
 /*
     .list-price:last-child,
@@ -77,13 +77,283 @@
         position: relative;
         margin-top: -10px;
     }
+    
+    .list-it .base .spaceForDescription {
+        padding-left: 85px;
+    }
+    .cell-separate{ background: none;}
+    .list-price {
+        float: none;
+        margin-bottom: 15px;
+    }
+    .list-price:last-child {
+        margin-left: auto;
+    }
+    .why-we {        
+        background-size: 1450px;
+    }
+    .why-we .text {
+        height: 127px;
+        width: 155px;
+    }
+    .why-we .text.item1 { left: 157px; top: 25px;}
+    .why-we .text.item2 { right: 152px; top: 123px; width: 150px;}
+    .why-we .text.item3 {
+        left: 164px;
+        top: 245px;
+    }
+    .why-we .text.item4 { right: 148px; top: 341px; }
+    .why-we .text.item5 { left: 157px; top: 447px; }
+    
+    .why-we .text{ display: table;}
+    .why-we .text:before{ display: none;}
+    .why-we .text span{ display: table-cell; font-size: 15px;}
+    .why-we .count {
+        font-size: 30px;
+        width: 46px;
+        height: 46px;
+        line-height: 46px;
+    }
+    .why-we .count{ left: 47%!important;}
+    .why-we .count.item1 {top: 70px;
+    }
+    .why-we .count.item2 {
+        top: 175px;
+    }
+    .why-we .count.item3 {
+        top: 280px;
+    }
+    .why-we .count.item4 {
+        top: 384px;
+    }
+    .why-we .count.item5 {
+        top: 490px;
+    }
+    .why-we .relative {
+        min-height: 585px;
+    }
+    .why-we {
+        min-height: 695px;
+    }
+    .list-it .base .spaceForDescription {
+        padding-left: 0;
+    }
+    .list-it.from-source .spaceForDescription {
+        padding-left: 80px;
+    }
+    .article .title{
+        display: table;
+        line-height: 60px;
+    }
+    .article .title{ width: 100%;}
+    .article .title:before{ display: none;}
+    .article .title div{ display: table-cell;}
+    .icon-large {
+        float: none!important;
+    }
+    .icon-large:before{ display: none;}
+    .withPhotos p {
+        padding-right: 0;
+    }
+    .imageForRightSide{ margin: 0 auto!important; width: 100%;}
+    .image-pictogram-key:after {
+        left: 20%;
+        bottom: -190px;
+    }
+    
+    .article .title.large-text div img {
+        float: none;
+        margin:15px 0;
+    }
+    .article .title.large-text div span {    
+        display: block;
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .list-it .base .icon {
+        width: 100%;
+    }
+    .stocks .item:first-child{ width: 25%;}
+    .stocks .item:last-child{ float: right; width: 210px;}
+    
+    .list-it.from-source .spaceForDescription {
+        padding-left: 30px;
+    }
+    .icons-boxes:before {
+        right: 0;
+    }
 }
 
+
 @media (max-width:640px){
+    .stocks .item:last-child,
+    .from-source .item-col:last-child,
+    .list-it .item-col{
+        display: none;
+    }
+    .list-it .base .spaceForDescription{
+        padding: 0 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .attention{ background: none;}
+    
+    .why-we .text.item1 {
+        left: 92px;
+    }
+    .why-we .text.item3 {
+        left: 100px;
+    }
+    .why-we .text.item5 {
+        left: 92px;
+    }
+    .why-we .text.item2, 
+    .why-we .text.item4 {
+        right: 90px;
+    }
+    .why-we .count {
+        left: 46%!important;
+        width: 49px;
+    }
+    
+    .image-pictogram-key:after,
+    .right-side .cell-separate{ display: none;}
+    
+    .content-img{ margin: 0 auto!important;}
+    
+    .stocks .list-it .base .spaceForDescription .inner{
+        max-width: 100%;
+    }
+    
+    .stocks .item:first-child{ width: 100%;}
+    .stocks .list-it .base .spaceForDescription{ padding: 15px 0;}
+    
+    .stocks .item{ min-height: 150px;}
+    .stocks .list-it .base .spaceForDescription, 
+    .stocks .list-it .base .icon,
+    .stocks .list-it .base .right {
+        height: 150px;
+    }
+    .stocks {
+        padding-bottom: 65px;
+    }
 }
 
 @media (max-width:500px){
+    .about .item-col { 
+        width: 100%!important;
+    }    
+    .block-review .description{ padding: 0;}
+    .why-we{
+        background: #8ed9e0;
+    }    
+    .why-we .text {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        left: inherit!important;
+        right: inherit!important;
+        top: inherit!important;
+        color: #333;
+        display: table;
+        margin-left: 44px;
+        height: 50px;
+    }
+    .why-we,
+    .why-we .relative {
+        min-height: 0;
+    }
+    .will-call {
+        float: none;
+        text-align: center;
+        width: 206px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .header .item-col:first-child{
+        height: 111px;
+    }
+    section.header .title{
+        padding-top: 0;
+        margin: 0;
+    }
+    section.header .title .full,
+    section.header .title{ background: none;}
+    
+    section.header .title .full{
+        padding: 0 0 15px 0;
+    }
+    .about .base p {
+        min-height: 25px;
+    }
+    .review .slick-slide {
+        margin: 0 40px;
+    }
+    .why-we p{
+        position: relative;
+        overflow: hidden;
+    }
+    .why-we .count {
+        left: inherit!important;
+        top: inherit!important;
+        width: 49px;
+        float: left; margin-right: 15px;
+    }
+    .france-image,
+    .icons-boxes:after,
+    .icons-boxes:before{ display: none;}
 }
 
 @media (max-width:400px){
+    .header .item-col:first-child{ padding: 0;}
+    
+    .header .descriptions {
+        line-height: 35px;
+        font-size: 22px;
+    }
+    .title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .block-review .description p {
+        line-height: 21px;
+    }
+    .review{ padding-bottom: 10px;}
+    .delivery .item-col{
+        padding: 0;
+    }
+    .list-it .base .spaceForDescription {
+        height: 100px;
+    }
+ 
+    .block-articles .item-col{ padding: 0;}
+    
+    .from-country{
+        background: #7ed5ff;
+    }
+    
+    .back-image-music,
+    .itDoing,
+    .imageForRightSide,
+    .content-img,
+    .back-side-country,
+    .back-tea,
+    .back-side-china{
+        display: none;
+    }
+    .stocks {
+        padding:15px 0 0 0;
+        
+    }    
+    .article .title img {
+        max-width: 100%;
+    }
+    .list-it .base p{ padding: 15px 5px;}
+    .from-country .min-height{ min-height: 0;}
+    .article .title{ font-size: 28px;}
+    .article .title div {
+        padding-top: 10px;
+    }
 }

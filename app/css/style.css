@@ -276,7 +276,8 @@ section.header .title{
     border: none;
     display: inline-block;
     border-radius: 100%;
-    font-size: 0;
+    font-size: 0!important;
+    line-height: 0!important;
     width: 12px;
     height: 12px;
     background: url('../images/icons/point.png') no-repeat;
@@ -393,7 +394,9 @@ section.header .title{
     height: 27px;
     background: url("../images/icons/arrows.png") no-repeat;
     border: none;
-    font-size: 0;
+    font-size: 0!important;
+    color: transparent;
+    line-height: 0!important;
     position: absolute;
     display: block;
     top: 139px;
@@ -696,7 +699,7 @@ box-shadow: 10px 0px 10px 0px rgba(231,159,32,1);
     min-height: 927px;
     background: url("../images/back-map.jpg") no-repeat center top;
 }
-.why-we{}
+.why-we p{ margin: 0;}
 .why-we .count{
     color: #030303;
     font-size: 40px;
@@ -710,9 +713,10 @@ box-shadow: 10px 0px 10px 0px rgba(231,159,32,1);
     position: absolute;    
 }
 .why-we .relative {
-    width: 765px;
+    width: 100%;
+    max-width: 765px;
     margin: 0 auto;
-    height: 800px;
+    min-height: 800px;
 }
 .why-we .count.item1 {
     left: 47%;
@@ -1069,8 +1073,8 @@ p b{
 
 
 .back-side-country{
-    background: url("../images/back-country.jpg") no-repeat center top;
-    height: 304px;       
+    background:#8ed9e0 url("../images/back-country.jpg") no-repeat center top;
+    height: 319px;
 }
 .back-side-china{
     background: url("../uploades/back-china.png") no-repeat center top;
@@ -1263,3 +1267,14 @@ p b{
 .single-item .slick-list img{ width: 100%;}
 
 .content-img{ width: 100%;}
+
+
+.navbar-toggle.collapsed span {
+    background: #7ed5ff!important;
+}
+.navbar-toggle.collapsed {
+    border-color: #7ed5ff;
+}
+.attention .base{ margin-top: 0;}
+
+.block-articles{ padding-top: 15px;}
